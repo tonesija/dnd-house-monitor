@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello wasm-pack!</title>
+</head>
+
+<body>
+  <div class="window">
+    <div class="top">
+      <div class="entity-list" id="entityList"></div>
+      <div class="buttons">
+        <input type="text" id="idInput">
+        <input type="number" id="initiativeInput">
+        <button id="addBtn">Add</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <div class="map"></div>
+  </div>
+
+
+  <script src="./bootstrap.js"></script>
+</body>
+
+</html>
+
+<style>
+  .window {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .entity-list {
+    border: 1px black solid;
+    display: flex;
+    height: 18vh;
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+  .buttons {
+    width: 20%;
+  }
+
+  .entity {
+    border: 1px black solid;
+  }
+
+  .map {
+    border: 1px black solid;
+    height: 75vh;
+  }
+</style>
